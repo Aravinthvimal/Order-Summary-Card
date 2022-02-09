@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&family=Red+Hat+Display:wght@300;400;500;700;900&family=Righteous&display=swap');
+  </style>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title> Order Summary </title>
+</head>
+<body style="background-color: #e5ecff;">
+  <main style="font-family: 'Outfit', sans-serif;" class="flex justify-center">
+    <div class="z-20 flex w-3/4 md:w-1/2 lg:w-1/4 bg-white my-16 md:my-16 lg:mt-16 rounded-xl">
+      <div class="text-center">
+        <img class="w-full object-fit object-cover rounded-t-xl" src="./images/illustration-hero.svg" />
+        <h3 style="color: hsl(223, 47%, 23%);" class="text-2xl font-semibold pt-6"> Order Summary </h3>
+        <div class="flex justify-center pt-3">
+          <p style="color: hsl(224, 23%, 55%)" class="font-normal text-xs w-2/3"> You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like! </p>
+        </div>
+        <div style="background-color: hsl(225, 100%, 98%);" class="flex justify-between rounded-xl mx-12 px-3 py-4 mt-6">
+          <div class="flex items-center gap-3 text-xs"> 
+            <img class="w-10" src="./images/icon-music.svg" /> 
+            <div class="flex flex-col">
+              <p style="color: hsl(223, 47%, 23%);" class="font-semibold "> Annual Plan </p>
+              <p style="color: hsl(224, 23%, 55%);"> $59.99/year </p>
+            </div> 
+          </div> 
+          <button class="focus:outline-none"><u style="color: hsl(245, 75%, 52%);" class="text-xs mt-2 mr-3"> change </u></button>
+        </div>
+        <div class="flex flex-col">
+          <button style="background-color: hsl(245, 75%, 52%); box-shadow: 0px 6px 15px hsl(245, 63%, 74%) ;" class="mt-4 text-xs text-white mx-6 py-2 rounded-xl focus:outline-none shadow-xl shadow-blue-500"> Proceed to Payment </button>
+          <button style="color: hsl(224, 23%, 55%)" class="focus:outline-none text-xs py-4 pb-8"> Cancel Order </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img class="absolute left-0 top-0 hidden md:block" src="./images/pattern-background-desktop.svg"/>
+      <img class="absolute left-0 top-0 block md:hidden" src="./images/pattern-background-mobile.svg" />
+    </div>
+  </main>
+  </style>
+</body>
+</html>
